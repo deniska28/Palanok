@@ -265,4 +265,8 @@ footer a{
     .content{
         height: 800px;
     }
+
+    main{
+        height: 800px;
+    }
 }
