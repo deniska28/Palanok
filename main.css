@@ -231,6 +231,11 @@ footer a{
         margin: 1rem 1rem;
     }
 
+    .up-block{
+        position: relative;
+    }
+
+
     .desc-box{
         margin: 0 1rem;
         flex-direction: column;
@@ -243,7 +248,7 @@ footer a{
     }
 
     .gerb{
-        margin: 5rem 0;
+        margin: 5rem 0 0 0;
     }
 
     .up-block{
@@ -256,12 +261,8 @@ footer a{
     }
 }
 
-@media screen and (max-height: 740px){
+@media screen and (max-height: 760px){
     .content{
         height: 800px;
-    }
-
-    main{
-        height: 700px;
     }
 }
