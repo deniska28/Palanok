@@ -226,7 +226,7 @@ footer a{
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     header{
         margin: 1rem 1rem;
     }
