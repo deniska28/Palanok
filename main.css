@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Fasthand';
+    src: url(./fonts/Fasthand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Fenix';
+    src: url(./fonts/Fenix-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jaini';
+    src: url(./fonts/Jaini-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background: rgb(58, 58, 58);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.burger{
+    display: none;
+}
+
+header{
+    margin: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Fenix';
+}
+
+header div a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div a span{
+    font-size: 2rem;
+    margin: 0 0 0 0.5rem;
+}
+
+header nav{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a:hover{
+    color: rgb(37, 37, 37);
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.up-block{
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+
+.desc-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6rem;
+}
+
+.main-text{
+    width: 650px;
+    height: 100%;
+}
+
+.main-text span{
+    font-size: 64px;
+}
+
+.main-text p{
+    font-size: 32px;
+}
+
+.gerb{
+    display: flex;
+    align-items: end;
+    margin-left: 30%;
+}
+
+.down-block{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    height: 100vh;
+    flex-grow: 1;
+    
+}
+
+.shell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 770px;
+    height: 720px;
+    flex-direction: column;
+    border: 3px solid #FFD382;
+    border-radius: 15px;
+    font-family: 'Fasthand';
+    background: #272727;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    font-size: 30px;
+    color: #FFD382;
+}
+
+.shell span{
+    font-size: 40px;
+    color: #FFD382;
+}
+
+.picture{
+    width: 300px;
+    height: 200px;
+    border: 3px solid #FFD382;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 4rem 0;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.shell-white{
+    border-color: white;
+}
+
+.shell-white p{
+    margin: 1rem 5rem;
+    text-align: center;
+    font-size: 23px;
+}
+
+.shell-white a{
+    font-size: 48px;
+    color: #FFD382;
+}
+
+.redbg{
+    background: #5A3636;
+}
+
+.greybg{
+    background: #272727;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BA9D6E;
+    height: 100px;
+    text-decoration: underline;
+    font-size: 36px;
+    color: #272727;
+    font-family: 'Fasthand';
+}
+
+footer a{
+    color: #272727;
+}
+
+
+@media screen and (max-width: 1270px) {
+    .burger{
+        display: block;
+    }
+
+    header nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main-text span{
+        font-size: 44px;
+    }
+    .main-text p{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        margin: 1rem 1rem;
+    }
+
+    .desc-box{
+        margin: 0 1rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-text{
+        width: 100%;
+    }
+
+    .gerb{
+        margin: 5rem 0;
+    }
+
+    .up-block{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .shell-white p{
+        font-size: 16px;
+        margin: 1rem 1rem;
+    }
+}
+
+@media screen and (max-height: 740px){
+    .content{
+        height: 800px;
+    }
+
+    main{
+        height: 700px;
+    }
+}
